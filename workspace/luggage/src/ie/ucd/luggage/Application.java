@@ -2,7 +2,7 @@ package ie.ucd.luggage;
 
 import java.util.ListIterator;
 
-public class Application extends Suitcase{
+public class Application{
 	public static void main(String [] args){
 		Item B=new Bomb();
 		Item P=new Pen();
@@ -24,7 +24,7 @@ public class Application extends Suitcase{
 		
 		double n=SL.getWeight(); //get the weight of the safe luggage and the suitcase itself
 		double t=SL.getMaxWeight();
-	ListIterator<Item> iter = items.listIterator();
+	ListIterator<Item> iter = Luggage.items.listIterator();
 	while(iter.hasNext()) {
 	            System.out.print("the items in the safeluggage contains "+iter.next()+""+"¡¢");//print out all the items on the list
 	        }

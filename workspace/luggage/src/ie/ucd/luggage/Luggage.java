@@ -13,7 +13,7 @@ public abstract class Luggage {
 	/**
 	 * The list of contained items
 	 */
-	protected static List<Item> items;
+	public static List<Item> items;
 	
 	/**
 	 * The constructor initialises the 
