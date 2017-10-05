@@ -1,7 +1,7 @@
 package ie.ucd.luggage;
 
 public class Suitcase extends Luggage {
-	double bagweight;
+	static double bagweight;
 	public Suitcase(){
 		
 	}
@@ -9,13 +9,15 @@ public class Suitcase extends Luggage {
 	@Override
 	public double getBagWeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 30;
 	}
 
 	@Override
 	public double getMaxWeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 500;
 	}
+	
+	
 
 }

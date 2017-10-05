@@ -14,7 +14,7 @@ public class Pen implements Item {
 	@Override
 	public double getWeight() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 5;
 	}
 
 	@Override

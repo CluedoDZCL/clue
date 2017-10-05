@@ -5,9 +5,11 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class Safeluggage extends Luggage implements Item{
+public class Safeluggage extends Suitcase implements Item{
 	public static List<Item> items;
+	
 	public Safeluggage(){
+		super();
 		items = new ArrayList<Item>();
 	}
 	@Override
@@ -24,6 +26,14 @@ public class Safeluggage extends Luggage implements Item{
 	public String getType() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	public double getWeight(){
+		double weight = 0;
+		for(Item i: items){
+			weight += i.getWeight();
+		}
+		weight=weight+getBagWeight()+bagweight;
+		return weight;
 	}
 		public static void add(Item item, Boolean password ){	
 		if (password==false){
