@@ -40,21 +40,6 @@ public class Safeluggage extends Luggage implements Item{
 	    	System.out.println("password is incorrect, this item can not be removed");
 	}
 	
-	public static void main(String [] args){
-		Item B=new Bomb();
-		Item P=new Pen();
-		Item L=new Laptop();
-		Safeluggage SL=new Safeluggage();
-		Boolean password1=B.isDangerous();
-		Boolean password2=P.isDangerous();
-		Boolean password3=L.isDangerous();
-		Safeluggage.add(B,password1);
-		Safeluggage.add(P,password2);
-		Safeluggage.add(L,password3);
-		ListIterator<Item> iter = items.listIterator();
-		 while(iter.hasNext()) {
-	            System.out.print(iter.next()+"¡¢");
-	        }
-	}	
+	
 	}
 	
