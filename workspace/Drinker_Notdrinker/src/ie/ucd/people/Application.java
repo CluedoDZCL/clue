@@ -1,6 +1,5 @@
 package ie.ucd.people;
 
-import ie.ucd.items.NotAlcoholicDrink;
 import ie.ucd.items.Wine;
 import ie.ucd.items.WineType;
 import ie.ucd.items.Juice;
